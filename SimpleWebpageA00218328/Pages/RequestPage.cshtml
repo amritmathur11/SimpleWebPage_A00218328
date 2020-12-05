@@ -1,0 +1,17 @@
+﻿@page
+@model SimpleWebpageA00218328.Pages.RequestPageModel
+@{ 
+    ViewData["Title"] = "Request Page";
+}
+@*@<d1>
+    <dt>User-Agent</dt>
+    <dd>@Request.Headers["User-Agent"]</dd>
+    <dt>Content.Length</dt>
+    <dd>@Request.Headers["Content-Length"]</dd>
+</d1>*@
+
+@foreach (var item in Request.Headers)
+{
+    <dt>@item.Key</dt>
+    <dd>@item.Value</dd>
+}

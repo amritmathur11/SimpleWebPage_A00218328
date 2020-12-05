@@ -1,0 +1,29 @@
+﻿@page
+@model SimpleWebpageA00218328.Pages.ArrayPageModel
+@{
+    ViewData["Title"] = "Array page";
+    string[] names = new string[6];
+    names[0] = "Amrit";
+    names[1] = "Jagdeep";
+    names[2] = "Gurdeep";
+    names[3] = "Gagan";
+    names[4] = "Vamsi";
+    names[5] = "Satya";
+
+    string[] names2 = { "Amrit", "Jagdeep", "Gurdeep", "Gagan", "Vamsi", "Satya" };
+
+}
+
+<ul>
+    @for (int i = 0; i < names.Length; i++)
+    {
+
+        @if (names[i] != "Amrit")
+        {
+            <li>@names[i]</li>
+
+        }
+
+    }
+</ul>
+

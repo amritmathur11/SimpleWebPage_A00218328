@@ -1,0 +1,34 @@
+﻿@page
+    <div style="background-color:lightblue">
+        @model SimpleWebpageA00218328.Pages.blogpostModel
+        @{
+            ViewData["Title"] = "Blog Post";
+        }
+
+        <article>
+            <section>
+                <header>
+                    <h1 style="color:red;"><b>Frederick Forsyth</b></h1>
+                </header>
+            </section>
+
+        </article>
+        <div class="ff">
+            <div id="authorimage">
+                <img alt="Frederick Forsyth's picture" src="https://img.fantasticfiction.com/images/0/3334_2.jpg" width="149" height="175">
+
+            </div>
+            <div class="blurb">
+                <div class="authorheading"><br><img alt="UK flag" src="https://img.fantasticfiction.com/images/uk.jpg" width="20" height="10"> (<small>b.</small><span class="year"><a href="/years/1938.htm">1938</a></span>)<br></div><br><b style="color:red;">Frederick Forsyth</b> is the #1 <i>New York Times</i> bestselling author of seventeen novels, including <i>The Day of the Jackal </i>and <i>The Odessa File</i>, as well as short-story collections and a memoir. A former Air Force pilot, and one-time print and television reporter for the BBC, he has had four movies and two television miniseries made from his works. Forsyth is the winner of three Edgar Awards, and in 2012 he won the Diamond Dagger Award from the Crime Writers' Association, a lifetime achievement award for sustained excellence. He lives in in Buckinghamshire, England.<br>
+            </div>
+            <div class="spacer">&nbsp;</div>
+        </div>
+        <form action="/html/tags/html_form_tag_action.cfm" method="post">
+            <div>
+<textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+Hey... say something!
+</textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
